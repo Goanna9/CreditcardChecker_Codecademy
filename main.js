@@ -56,7 +56,7 @@ const validateCred = array => {
 // __________START__________
 // function that creates an Array of faulty Credit Card Numbers
 const findInvalidCards = nestedArray => {
-  let invalidCards = []
+  let invalidCards = [];
 
  for (let i = 0; i < nestedArray.length; i++) {
   if (!validateCred(nestedArray[i])) {
