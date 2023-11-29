@@ -31,14 +31,12 @@ const validateCred = array => {
   const length = array.length - 1;
   let sum = array[length];
   let counter = 0;
-  let doubled = 0;
   
   for (let i = length; i > 0; i--) {
     if (counter % 2 !== 0) {
       sum = sum + array[i - 1];
       counter++;
     } else if (counter % 2 === 0) {
-      doubled = (array[i - 1] * 2);
       sum = sum + (array[i - 1] * 2);
       counter++;
         if ((array[i - 1] * 2) > 9) {
